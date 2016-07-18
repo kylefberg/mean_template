@@ -1,4 +1,4 @@
-# blontourage
+# Mean Template
 
 :tada:
 
