@@ -12,11 +12,37 @@ var env      = require('./backend/config/environment'),
     routes   = require('./backend/config/routes');
 
 // Instantiate a server application.
+var express = require('express');
 var app = express();
 
 // Configure the application (and set it's title!).
-app.set('title', env.TITLE);
-app.set('safe-title', env.SAFE_TITLE);
+app.set('view engine', 'ejs');
+app.set('views', __dirname + 'views');
+app.set('Western Christian Schools', env.TITLE);
+app.set('Western Christian Schools', env.SAFE_TITLE);
+
+
+
+
+//my code
+//use res.render to load up an ejs view file
+//index page
+app.get('/', function(req, res, next)  {
+  res.render('views/pages/index');
+});
+
+//about page
+app.get('/about', function(req, res, next) {
+  res.render('pages/about');
+});
+
+app.listen(3000);
+console.log('3000 is the magic port');
+
+
+
+
+
 
 // Create local variables for use thoughout the application.
 app.locals.title = app.get('title');

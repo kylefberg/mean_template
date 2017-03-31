@@ -1,8 +1,8 @@
 var _ = require('lodash');
 
 var localEnvVars = {
-  TITLE:      'template',
-  SAFE_TITLE: 'template',
+  TITLE:      'Western Chrstian Schools',
+  SAFE_TITLE: 'WCS',
   superSecret: 'templateforever'
 };
 

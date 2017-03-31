@@ -1,6 +1,7 @@
 {
-  "name": "meanTemplate",
-  "version": "0.0.0",
+  "name": "WesternChristianSchools",
+  "main": "server.js",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./backend/bin/www",
