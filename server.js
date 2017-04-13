@@ -17,7 +17,7 @@ var app = express();
 
 // Configure the application (and set it's title!).
 app.set('view engine', 'ejs');
-app.set('views', __dirname + 'views');
+app.set('views', path.join(__dirname + 'views'));
 app.set('Western Christian Schools', env.TITLE);
 app.set('Western Christian Schools', env.SAFE_TITLE);
 
@@ -28,17 +28,16 @@ app.set('Western Christian Schools', env.SAFE_TITLE);
 //use res.render to load up an ejs view file
 //index page
 app.get('/', function(req, res, next)  {
-  res.render('views/pages/index');
+  res.render('/views/pages/index');
 });
 
 //about page
 app.get('/about', function(req, res, next) {
-  res.render('pages/about');
+  res.render('/views/pages/about');
 });
 
 app.listen(3000);
 console.log('3000 is the magic port');
-
 
 
 
