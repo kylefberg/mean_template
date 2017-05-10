@@ -14,7 +14,7 @@ router.get('/', pagesController.welcome);
 router.get('/users',     usersController.index);
 router.get('/users/:id', usersController.show);
 
-router.get('/index', function (req, res, next) {
+router.get('index', function (req, res, next) {
   return res.render('views/pages/index');
 });
 
