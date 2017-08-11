@@ -398,8 +398,8 @@ only screen and (min-device-pixel-ratio: 1.5){
   }
 
   .view {
-      width: 300px;
-      height: 340px;
+      width: 200px;
+      height: 240px;
       margin: 0px;
       float: center;
       border: 10px solid #fff;
@@ -411,8 +411,8 @@ only screen and (min-device-pixel-ratio: 1.5){
       background: #fff url(../images/bgimg.jpg) no-repeat center center
   }
   .view .mask, .view .content {
-      width: 300px;
-      height: 340px;
+      width: 200px;
+      height: 240px;
       position: absolute;
       overflow: hidden;
       top: 0;
@@ -434,7 +434,7 @@ only screen and (min-device-pixel-ratio: 1.5){
   .view p {
       font-family: Georgia, serif;
       font-style: italic;
-      font-size: 12px;
+      font-size: 14px;
       position: relative;
       color: #fff;
       padding: 10px 20px 20px;
